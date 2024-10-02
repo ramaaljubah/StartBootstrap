@@ -1,0 +1,135 @@
+/* h1 and other */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*italic */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/*in  any project*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+/*for this project*/
+
+:root{
+    --main-color:#ffc800
+}
+
+a{
+    text-decoration: none;
+    /*without underline*/
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: "Montserrat",sans-serif;
+}
+
+p{
+    font-family: "Roboto Slab", serif;
+}
+li{
+    list-style: none;
+}
+.container{
+    margin: auto;
+    width: 85%;
+    height: 100%;
+}
+
+/*header*/
+header{
+    background-image: url(../images/header-bg.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position-y:-85px;
+}
+/*navbar*/
+.navbar .container{
+
+    display: flex;
+    justify-content: space-between;
+    /*for right and left*/
+    align-items: center;
+}
+.navbar {
+    padding-top:20;
+    height:10%;
+}
+
+.logoImg img{
+  
+    width: 200px;
+}
+.links{
+   
+    width: 50%;
+}
+/*links*/
+.links ul {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.links a{
+    Font-size: 15.2px;
+    Font-weight: 400;
+    Line-height: 22.8px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.links a:hover{
+    color: var(--main-color);
+}
+
+.header-content {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 94%; 
+    color: white;
+  padding-top: 50px;
+}
+
+.header-content p{
+   /*  font-family: "Roboto Slab", serif;*/
+    Font-size: 36px;
+
+    Font-weight: 400;
+
+    Line-height: 36px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.header-content h1{
+    Font-size: 72px;
+
+    Font-weight: 700;
+
+    Line-height: 72px;
+
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.header-content a{
+   
+    padding: 20px 40px;
+    background-color: var(--main-color);
+    Font-size: 18px;
+
+    Font-weight: 700;
+
+    Line-height: 27px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.header-content a:hover{
+background-color: #d9aa00;
+}
